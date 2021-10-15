@@ -62,6 +62,29 @@
   line-height: 20pt;
 }
 
+.category_list {
+  background-color: #ccc;
+  color: white;
+  display: inline;
+  border-radius: 3px;
+  font-size: 11pt;
+  padding: 1.5px 5px;
+  font-weight: 500;
+  line-height: 20pt;
+}
+
+
+.category_oral {
+  background-color: #000;
+  color: white;
+  display: inline;
+  border-radius: 3px;
+  font-size: 11pt;
+  padding: 1.5px 5px;
+  font-weight: 500;
+  line-height: 20pt;
+}
+
 .category_computervision {
   background-color: #bd2929;
   color: white;
