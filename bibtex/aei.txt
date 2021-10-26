@@ -1,9 +1,8 @@
-@misc{
-      joo2021guided,
-      title={Guided Hyperparameter Tuning Through Visualization and Inference}, 
-      author={Hyekang Joo and Calvin Bao and Ishan Sen and Furong Huang and Leilani Battle},
+@misc{vo2021aei,
+      title={AEI: Actors-Environment Interaction with Adaptive Attention for Temporal Action Proposals Generation}, 
+      author={Khoa Vo and Hyekang Joo and Kashu Yamazaki and Sang Truong and Kris Kitani and Minh-Triet Tran and Ngan Le},
       year={2021},
-      eprint={2105.11516},
+      eprint={2110.11474},
       archivePrefix={arXiv},
-      primaryClass={cs.HC}
+      primaryClass={cs.CV}
 }
