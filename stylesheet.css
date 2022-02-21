@@ -208,6 +208,10 @@ a:hover {
   text-decoration: none;
 }
 
+a.pi:hover {
+  color: #59d34e
+}
+
 body,
 td,
 th,
