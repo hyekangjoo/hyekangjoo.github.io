@@ -1,0 +1,15 @@
+@article{vegaplus,
+  author    = {Junran Yang and
+               Hyekang Kevin Joo and
+               Sai S. Yerramreddy and
+               Siyao Li and
+               Dominik Moritz and
+               Leilani Battle},
+  title     = {Demonstration of VegaPlus: Optimizing Declarative Visualization Languages},
+  journal   = {ACM Special Interest Group on Management of Data (SIGMOD) Conference - Demo Track},
+  volume    = {abs/2201.06742},
+  year      = {2022},
+  url       = {https://arxiv.org/abs/2201.06742},
+  eprinttype = {arXiv},
+  eprint    = {2201.06742}
+}
