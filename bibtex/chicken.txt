@@ -1,0 +1,8 @@
+@misc{joo2022birds,
+      title={Birds' Eye View: Measuring Behavior and Posture of Chickens as a Metric for Their Well-Being}, 
+      author={Kevin Hyekang Joo and Shiyuan Duan and Shawna L. Weimer and Mohammad Nayeem Teli},
+      year={2022},
+      eprint={2205.00069},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}

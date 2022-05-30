@@ -1,3 +1,32 @@
+.waving-hand {
+  animation-name: highfive;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes highfive {
+  0% { transform: scale(0.5) }
+  3% { transform: scale(0.6) }  /* The following five values can be played with to make the waving more or less extreme */
+  7% { transform: scale(0.7) }
+  10% { transform: scale(0.8) }
+  13% { transform: scale(0.9) }
+  17% { transform: scale(1) }
+  20% { transform: scale(1) }
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+  15% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+  30% { transform: rotate(-8.0deg) }
+  40% { transform: rotate(14.0deg) }
+  50% { transform: rotate(-4.0deg) }
+  60% { transform: rotate(10.0deg) }
+  70% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+ 100% { transform: rotate( 0.0deg) }
+}
+
 #pubtype-select{
   font-size: 13px;
   padding: 10px 8px 10px 14px;
