@@ -47,7 +47,48 @@
                     </p>
                   </td>
                   <td style="padding:2.5%;width:37%;max-width:37%">
-                    <a href="images/ny-circle.png" style="pointer-events: none"><img style="width:100%; max-width:100%; pointer-events: none" alt="profile photo" src="images/ny-circle.png" class="hoverZoomLink"></a>
+                    <!--Slide Ref: https://www.youtube.com/watch?v=0wvrlOyGlq0-->
+                    <div id="myslides" class="slider">
+                      <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+
+                        <div class="slide first">
+                          <img src="images/hyekangjoo-circle.png" style="width:100%; max-width:100%; pointer-events: none" alt="">
+                        </div>
+                        <div class="slide">
+                          <img src="images/ny-circle.png" style="width:100%; max-width:100%; pointer-events: none" alt="">
+                        </div>
+                        <div class="slide">
+                          <img src="images/cvpr_circle.png" style="width:100%; max-width:100%; pointer-events: none" alt="">
+                        </div>
+
+                        <div class="navigation-auto">
+                          <div class="auto-btn1"></div>
+                          <div class="auto-btn2"></div>
+                          <div class="auto-btn3"></div>
+                        </div>
+                        
+                        <div class="navigation-manual">
+                          <label for="radio1" class="manual-btn"></label>
+                          <label for="radio2" class="manual-btn"></label>
+                          <label for="radio3" class="manual-btn"></label>
+                        </div>
+
+                        <script type="text/javascript">
+                          document.getElementById("radio1").checked = true;
+
+                          let counter = 1;
+
+                          setInterval(() => {
+                            document.getElementById("radio" + ((counter % 3) + 1)).checked = true;
+                            counter++;
+                          }, 7500);
+                        </script>
+                      </div>
+                    </div>
+                    <!-- <a href="images/ny-circle.png" style="pointer-events: none"><img style="width:100%; max-width:100%; pointer-events: none" alt="profile photo" src="images/ny-circle.png" class="hoverZoomLink"></a> -->
                   </td>
                 </tr>
                 <tr style="display:block;">
@@ -114,7 +155,7 @@
                           9/22: Attends the 2022 Grace Hopper Celebration (Virtual)
                         </li> -->
                         <li>
-                          6/22: Attends CVPR 2022 (New Orleans, LA) and serves as a student mentor for the HBCU/MI (Historically Black Colleges and Universities/Minority Institutions) Program
+                          6/22: Attends CVPR 2022 (New Orleans, LA) and selected to serve as one of 11 student mentors for the HBCU/MI (Historically Black Colleges and Universities/Minority Institutions) Program
                         </li>
                         <li>
                           6/22: Attends the 41st ACM SIGMOD Conference (Remote)
@@ -533,15 +574,15 @@
               <tbody>
                 <tr>
                   <td style="padding:20px;width:25%;vertical-align:middle">
-                    <img src="images/bitcamp.png" alt="bitcamp" style="width:70%;max-width:100%;margin-left: auto; margin-right: auto;display:block">
+                    <img src="images/cvpr22.png" alt="bitcamp" style="width:100%;max-width:100%;margin-left: auto; margin-right: auto;display:block">
                   </td>
                   <td width="75%" valign="center">
-                    <a href="https://bit.camp/"><strong>Bitcamp (Hackathon)</strong></a>
+                    <a href="https://sites.google.com/view/cvpr-academy/"><strong>IEEE/CVF CVPR 2022</strong></a>
                     <br />
-                    <em>University of Maryland, College Park</em>
+                    <em>CVPR Academy: HBCU/MI (Historically Black Colleges and Universities/Minority Institutions) Workshop</em>
                     <br />
                     <br />
-                    Mentor
+                    Mentor & Poster Presenter
                     <br />
                     <span class="category_new">Spring 2022</span>
                   </td>
