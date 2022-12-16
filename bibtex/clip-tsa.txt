@@ -1,0 +1,10 @@
+@misc{https://doi.org/10.48550/arxiv.2212.05136,
+  doi = {10.48550/ARXIV.2212.05136},
+  url = {https://arxiv.org/abs/2212.05136},  
+  author = {Joo, Hyekang Kevin and Vo, Khoa and Yamazaki, Kashu and Le, Ngan},  
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},  
+  title = {CLIP-TSA: CLIP-Assisted Temporal Self-Attention for Weakly-Supervised Video Anomaly Detection},  
+  publisher = {arXiv},  
+  year = {2022},  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
