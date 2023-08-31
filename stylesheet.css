@@ -30,11 +30,11 @@
   text-align: left;
   background-color: #1E2021;
   padding: 10px;
-  width: 270px;
+  width: 225px;
   position: absolute;
   border-radius: 3px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  right: -240px;
+  right: -210px;
   color: #FFF;
   font-size: 13px;
   line-height: 1.4;
@@ -47,7 +47,7 @@
   height: 0;
   border:10px solid transparent;
   border-bottom-color:#1E2021;
-  right: 250px;
+  right: 220px;
   top:-19px;
 }
 
@@ -385,6 +385,17 @@
 
 .category_computervision {
   background-color: #bd2929;
+  color: white;
+  display: inline;
+  border-radius: 3px;
+  font-size: 11pt;
+  padding: 1.5px 5px;
+  font-weight: 500;
+  line-height: 20pt;
+}
+
+.category_multimodality {
+  background-color: #81dc36;
   color: white;
   display: inline;
   border-radius: 3px;
