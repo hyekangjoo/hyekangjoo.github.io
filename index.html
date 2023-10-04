@@ -10,6 +10,21 @@
 
       gtag('config', 'G-DMBGX018LJ');
     </script>
+    <script type="text/javascript">
+      window.onload = () => {
+        let pubtype_select = document.getElementById("pubtype-select").value;
+        let pubtype_choice = document.getElementsByClassName(pubtype_select);
+        let pubtype_all = document.getElementsByClassName("pubtype-all");
+
+        for (let each of pubtype_all) {
+            each.style.display = 'none';
+        }
+
+        for (let each of pubtype_choice) {
+            each.style.display = 'block';
+        }
+      }
+    </script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Kevin Hyekang Joo</title>
     <meta name="author" content="Jon Barron">
@@ -45,21 +60,11 @@
                       <!-- I am particularly interested in the areas of <strong>Video Understanding & Spatiotemporal Analysis</strong> <em>(e.g., Action Recognition, Video Anomaly Detection, Multispectral Satellite Imagery)</em>, 
                       <strong>Deep Generative Models</strong> <em>(e.g., GAN, VAE, Diffusion Model)</em>, <strong>Vision-Language Analysis</strong> <em>(e.g., CLIP, Video Captioning)</em>, and <strong>Cognitive Science</strong>.  -->
                       
-                      <!-- My primary research interest lies in <strong>Video Understanding & Spatiotemporal Analysis</strong> <em>(e.g., Action Recognition, Video Anomaly Detection, Multispectral Satellite Imagery, Time-Series)</em>, and 
-                      my favorite <em>areas of overlap</em> with the topic include 
-                      <strong>Multimodality</strong>,
-                      <strong>Zero-Shot Learning</strong>,
-                      and <strong>Cognitive Neuroscience</strong>. -->
-                      
-                      <!-- My primary research interest lies in <strong>Affective Computing</strong>, 
-                      such as <em>(i) behavioral & activity analysis</em>, <em>(ii) social & cognitive science</em>, <em>(iii) assistive human-robot interaction</em>, using multimodal and multivariate time-series data.  -->
-                      My primary research interest is in <strong>Human Behavior Analysis</strong> using multimodal and spatiotemporal data.
-                      <!-- <strong>Multimodal Affective Computing</strong>, such as <em>behavioral & activity analysis</em> and <em>social & assistive human-robot interaction</em>, through minimal human expenses externally. -->
-                      <!-- Image Synthesis & Manipulation, Generative Models,  -->
+                      My primary research interest is in <strong>Human Behavior & Affect Analysis</strong> using multisensory and spatiotemporal data through minimal human expenses.
                       <br /><br />
                       <!-- credits: https://dev.to/einargudnig/animated-waving-hand-emoji-4h54 -->
                       <!-- <span class="waving-hand">👋</span>  -->
-                      <strong>Activities</strong> | Outside of research, I like to watch movies, explore new food, and listen to music.
+                      <strong>Activities</strong> | Outside of research, I like to explore new food, engage in volunteer services, and listen to music.
                       In addition, as a supporter of diversity, equity, and inclusion, I like to learn about the needs of those with disabilities and explore the potential solutions I can offer with my skills.
                       <!-- <span class="waving-hand">🙌</span>  -->
                     </p>
@@ -117,37 +122,17 @@
                   </td>
                 </tr>
                 <tr style="display:block;">
-                  <td style="padding:2.5%;vertical-align:middle;width:100%; padding-top: 0">
+                  <!--change width:50% to 100% if you want to add <p> commented out below-->
+                  <td style="padding:2.5%;vertical-align:middle;width:50%; padding-top: 0">
                     <hr style="border:0;border-bottom-color:#ccc;border-bottom-style:solid;border-bottom-width: 1px;">
-                    <p>
+                    <!-- <p>
                       <br />
                       Previously, I have been fortunate enough to have opportunities to conduct research on 
-                      <!-- <em>Time-Series Analysis of Multispectral Satellite Imagery</em> with <a href="https://www.cs.umd.edu/people/dwj">Prof. David W. Jacobs</a> at the University of Maryland, -->
                       <em>Temporal Action Proposal Generation</em> and <em>Anomalous Activity Detection</em> with <a href="https://www.nganle.net/">Prof. Ngan Le</a> 
-                      <!-- from the <a href="https://directory.uark.edu/people/hj025">AICV Lab</a>  -->
                       at the University of Arkansas 
                       and on <em>ML-based Scalable Optimization</em> with <a href="https://homes.cs.washington.edu/~leibatt/bio.html">Prof. Leilani Battle</a> 
                       from the <a href="https://idl.cs.washington.edu/people/">Interactive Data Lab</a> at the University of Washington.
-
-                      <!-- Previously, I conducted research on <em>Data Science</em> and <em>Data Visualization</em> with <a href="https://www.cs.umd.edu/~leilani/bio.html">Dr. Leilani Battle</a> 
-                      at <a href="https://idl.cs.washington.edu/people/">UWashington Interactive Data Lab</a> (IDL), focusing on the <em>machine learning</em> aspect of projects, 
-                      and on <em>Object Detection</em> and <em>Object Tracking</em> with <br /><a href="https://www.cs.umd.edu/~nayeem/">Dr. Mohammad Nayeem Teli</a> at the University of Maryland. -->
-
-                      <!-- Previously, I have been fortunate enough to have opportunities to conduct research on <em>Object Detection & Tracking</em> and <em>Action Recognition</em> with <a href="https://www.cs.umd.edu/~nayeem/">Dr. Mohammad Nayeem Teli</a> from the University of Maryland,
-                      and on <em>Data Science</em> and <em>Data Visualization</em> with <a href="https://www.cs.umd.edu/~leilani/bio.html">Dr. Leilani Battle</a> 
-                      from <a href="https://idl.cs.washington.edu/people/">UWashington Interactive Data Lab</a> (IDL), focusing on the <em>ML-based scalable optimization</em> aspect of projects.
-
-                      In addition, I have conducted research on <em>Temporal Action Proposal Generation</em> and <em>Video Anomaly Detection</em> as an 
-                      <a href="https://directory.uark.edu/people/hj025">affiliate research assistant</a> with <a href="https://www.nganle.net/">Dr. Ngan Le</a> 
-                      from AICV Lab based in the University of Arkansas.   -->
-
-                      <!-- Some of the aforementioned projects are currently in submission to a conference / journal. -->
-                      <!-- <div style="color: rgba(255, 0, 255, 0.705); font-weight: bold; text-align: center;">
-                        <i>
-                          I am still in process of deciding on my summer research internship.  I am also available for a chat through email if you would like to discuss anything with me, including research collaboration.
-                        </i>
-                      </div> -->
-                    </p>
+                    </p> -->
                     <div style='margin-top:30px; text-align: center;'>
                       <div class="img_container">
                         <div class='pic'><a href="https://www.ri.cmu.edu/ri-people/kevin-hyekang-joo/"><img class='pic_img' alt="directory" src="images/tassel.png" class="hoverZoomLink"></a></div>
@@ -161,9 +146,6 @@
                               <p>
                                 kevinjoo (at) andrew.cmu.edu (Primary)<br />
                                 hkjoo (at) cs.umd.edu (Secondary)<br />
-                                <!-- &nbsp;&nbsp;&nbsp;hkjoo&nbsp;&nbsp;&nbsp; (at) cs.umd.edu (Secondary)<br /> -->
-                                <!-- &nbsp;&nbsp;&nbsp;hkjoo&nbsp;&nbsp;&nbsp; (at) cs.washington.edu (UW Inquiries)<br />
-                                &nbsp;&nbsp;&nbsp;hj025&nbsp;&nbsp;&nbsp; (at) uark.edu (UArk Inquiries) -->
                               </p>
                             </div>
                           </a>
@@ -209,7 +191,7 @@
                           7/23: Wins the <strong>Second-Place Presentation</strong> ($1,200) in the Final Round & the <strong>Best Poster Award</strong> ($500) in Semi-Final Round of the MIT Lincoln Laboratory’s Intern-Collaborated Research Presentation Program (Out of 28 Teams)
                         </li>
                         <li>
-                          6/23: A paper [4] accepted at <strong>IEEE ICIP 2023</strong>
+                          6/23: A paper [3] accepted at <strong>IEEE ICIP 2023 (Oral)</strong>
                         </li>
                         <li>
                           5/23: Starts <strong>Research Internship</strong> at the <strong>MIT Lincoln Lab</strong> in Lexington, MA
@@ -251,7 +233,7 @@
                           3/22: Attends the 37th CSUN Assistive Technology Conference (Anaheim, CA | <em>Scholarship by UW</em>)
                         </li> -->
                         <li>
-                          2/22: A paper [3] accepted at <strong>ACM SIGMOD 2022</strong>
+                          2/22: A paper [2] accepted at <strong>ACM SIGMOD 2022</strong>
                         </li>
                         <!-- <li>
                           1/22: Receives the <strong>Graduate Assistantship</strong> from the University of Maryland as a Full-Time <strong>Teaching Assistant</strong> for <strong>MSML641 (Natural Language Processing)</strong> and <strong>CMSC426 (Computer Vision)</strong> in Spring 2022
@@ -264,7 +246,7 @@
                           12/21: Completes the Semester with a GPA of 4.0
                         </li> -->
                         <li>
-                          10/21: A paper [2] accepted at <strong>BMVC 2021</strong> for an <strong>oral presentation</strong>
+                          10/21: A paper [1] accepted at <strong>BMVC 2021</strong> for an <strong>oral presentation</strong>
                         </li>
                         <!-- <li>
                           8/21: Receives the <strong>Graduate Assistantship</strong> as a Full-Time <strong>Research Assistant</strong> for Fall 2021 from the University of Maryland
@@ -298,15 +280,16 @@
                   <td style="padding-top:10px;padding-left:10px;width:100%;vertical-align:middle">
                     <heading>Publications</heading>
                     <select id="pubtype-select" onchange="selectPub()" style="float:right; margin-right: 10px;">
-                      <option value="pubtype-all">All</option>
                       <option value="pubtype-conference">Conference</option>
                       <option value="pubtype-journal">Journal</option>
                       <option value="pubtype-preprint">Preprint</option>
+                      <option value="pubtype-all">All</option>
                     </select>
                   </td>
                 </tr>
               </tbody>
             </table>
+            <br />
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <!-- <tr class="pubtype-conference pubtype-all">
@@ -388,7 +371,7 @@
                   </td>
                   <td style="padding-left:20px;padding-right:20px;padding-top:20px; padding-bottom:20px;width:75%;vertical-align:middle">
                     <a href="https://arxiv.org/abs/2212.05136">
-                      <papertitle>[4] CLIP-TSA: CLIP-Assisted Temporal Self-Attention for Weakly-Supervised Video Anomaly Detection</papertitle>
+                      <papertitle>[3] CLIP-TSA: CLIP-Assisted Temporal Self-Attention for Weakly-Supervised Video Anomaly Detection</papertitle>
                       <span class="category_new">new</span>
                     </a>
                     <br />
@@ -397,24 +380,23 @@
                     <a href="https://kashu7100.github.io/">Kashu Yamazaki</a>,
                     <a class="pi" href="https://www.nganle.net/">Ngan Le</a>
                     <br />
-                    <em>IEEE International Conference on Image Processing (ICIP), 2023 [<a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&venue=a9ZSGA40nccJ.2023&vq=eng_multimedia">h5-index: 61</a>] </em>
+                    <em>IEEE International Conference on Image Processing (ICIP), 2023 <font color="red"><strong>(Oral Presentation)</strong></font> [<a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&venue=a9ZSGA40nccJ.2023&vq=eng_multimedia">h5-index: 61</a>] </em>
                     <br />
-                    <span class="category_computervision">computer vision</span>
+                    <!-- <span class="category_computervision">computer vision</span>
                     <span class="category_multimodality">multimodality</span>
+                    <br /> -->
+                    <!-- <em>tags: video anomaly detection, activity analysis, clip, temporal self-attention</em>
+                    <br /> -->
+                    <a href="https://ieeexplore.ieee.org/document/10222289">conference</a> / <a href="https://drive.google.com/file/d/1Zn2ulqfwrqLp8omsLMk8F-WqoOa-LnhS/view?usp=sharing">video</a> / <a href="https://github.com/joos2010kj/CLIP-TSA">github</a> / <a href="https://arxiv.org/abs/2212.05136">pdf</a> / <a href="bibtex/clip-tsa.txt">bibtex</a><strong><em> (~18% oral acceptance)</em></strong>
                     <br />
-                    <em>tags: video anomaly detection, activity analysis, clip, temporal self-attention</em>
-                    <br />
-                    <a href="https://github.com/joos2010kj/CLIP-TSA">conference</a> / <a href="underway/index.html">github</a> / <a href="https://arxiv.org/abs/2212.05136">pdf</a> / <a href="bibtex/clip-tsa.txt">bibtex</a>
-                    <br />
-                    <br />
+                    <!-- <br />
                     In this paper, the magnitude-based video anomaly detection model is optimized in a weakly-supervised manner. 
                     The proposed training pipeline notably leverages the ViT-encoded visual features from CLIP, in contrast with 
                     the conventional C3D or I3D features in the domain, to extract discriminative representations efficiently
                     and nominates the snippets of interest with the proposed Temporal Self-Attention.
-                    <br />
+                    <br /> -->
                   </td>
                   </tr>
-                
                 <tr class="pubtype-conference pubtype-all">
                   <td style="padding-left:20px;padding-right:20px;width:25%;vertical-align:middle">
                     <div class="pic">
@@ -423,7 +405,7 @@
                   </td>
                   <td style="padding-left:20px;padding-right:20px;padding-top:20px; padding-bottom:20px;width:75%;vertical-align:middle">
                     <a href="https://arxiv.org/abs/2201.06742">
-                      <papertitle>[3] Demonstration of VegaPlus: Optimizing Declarative Visualization Languages</papertitle>
+                      <papertitle>[2] Demonstration of VegaPlus: Optimizing Declarative Visualization Languages</papertitle>
                       <!-- <span class="category_new">new</span> -->
                     </a>
                     <br />
@@ -436,19 +418,19 @@
                     <br />
                     <em>ACM Special Interest Group on Management of Data (SIGMOD) Conference, 2022 [<a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&venue=u1CjH9_75_cJ.2023&vq=eng_databasesinformationsystems">h5-index: 71</a>] </em>
                     <br />
-                    <span class="category_machinelearning">machine learning</span>
+                    <!-- <span class="category_machinelearning">machine learning</span>
                     <span class="category_hci">hci</span>
+                    <br /> -->
+                    <!-- <em>ACM SIGMOD Short Paper '22 statistics: <strong>33.8% accept</strong></em> -->
+                    <!-- <br /> -->
+                    <!-- <em>tags: scalable optimization, data visualization, dataflow, machine learning</em>
+                    <br /> -->
+                    <a href="https://dl.acm.org/doi/10.1145/3514221.3520168">conference</a> / <a href="https://www.youtube.com/watch?v=68Uj8zfHvm8">video</a> / <a href="https://github.com/vega/vega-plus">github</a> / <a href="https://arxiv.org/abs/2201.06742">pdf</a> / <a href="bibtex/vegaplus.txt">bibtex</a><strong><em> (~33% acceptance)</em></strong>
                     <br />
-                    <em>ACM SIGMOD Demo '22 statistics: <strong>33.8% accept</strong></em><!-- ? (?%) accept / ? submissions</em> -->
-                    <br />
-                    <em>tags: scalable optimization, data visualization, dataflow, machine learning</em>
-                    <br />
-                    <a href="https://dl.acm.org/doi/10.1145/3514221.3520168">conference</a> / <a href="https://www.youtube.com/watch?v=68Uj8zfHvm8">video</a> / <a href="https://github.com/vega/vega-plus">github</a> / <a href="https://arxiv.org/abs/2201.06742">pdf</a> / <a href="bibtex/vegaplus.txt">bibtex</a>
-                    <br />
-                    <br />We propose a system that takes declarative specifications to automatically offload computation-intensive processing to a separate DBMS by optimizing visualization plans through machine learning techniques. In this project, I was primarily in charge of scalable optimization aspect of the project.
-                    <br />
+                    <!-- <br />We propose a system that takes declarative specifications to automatically offload computation-intensive processing to a separate DBMS by optimizing visualization plans through machine learning techniques. In this project, I was primarily in charge of scalable optimization aspect of the project.
+                    <br /> -->
                     <br />           
-                    [ <em>Note: This is the <strong>UW REU project</strong> that I worked on with Profs. Battle and Moritz in Summer 2021. Keep an eye out for the follow-up version of the work, which is currently under submission!</em> ]
+                    <em>Note: This is the <strong>UW REU project</strong> that I worked on with Profs. Battle and Moritz in Summer 2021. Keep an eye out for the follow-up version of the work, which is currently under submission!</em>
                     <br />
                   </td>
                 </tr>
@@ -460,7 +442,7 @@
                   </td>
                   <td style="padding-left:20px;padding-right:20px;padding-top:20px; padding-bottom:20px;width:75%;vertical-align:middle">
                     <a href="https://arxiv.org/abs/2110.11474">
-                      <papertitle>[2] AEI: Actors-Environment Interaction with Adaptive Attention for Temporal Action Proposals Generation</papertitle>
+                      <papertitle>[1] AEI: Actors-Environment Interaction with Adaptive Attention for Temporal Action Proposals Generation</papertitle>
                     </a>
                     <br />
                     <a href="https://scholar.google.com/citations?user=Iyvx8vcAAAAJ&hl=en">Khoa Vo</a>,
@@ -473,18 +455,17 @@
                     <br />
                     <em>The British Machine Vision Conference (BMVC), 2021 <font color="red"><strong>(Oral Presentation)</strong></font> [<a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&venue=T_DfB2ikUbwJ.2023&vq=eng_computervisionpatternrecognition">h5-index: 77</a>]</em>
                     <br />
-                    <span class="category_computervision">computer vision</span>
+                    <!-- <span class="category_computervision">computer vision</span>
+                    <br /> -->
+                    <!-- <em>BMVC '21 statistics: <strong>40 (3.33%) oral</strong> / 437 (36.23%) accept / 1206 submissions</em>
+                    <br /> -->
+                    <!-- <em>tags: temporal action proposal generation, action recognition</em>
+                    <br /> -->
+                    <a href="https://www.bmvc2021-virtualconference.com/conference/papers/paper_1095.html">conference</a> / <a href="https://www.bmvc2021-virtualconference.com/conference/papers/paper_1095.html">video</a> / <a href="https://github.com/vhvkhoa/tapg-agentenvinteration">github</a> / <a href="https://www.bmvc2021-virtualconference.com/assets/papers/1095.pdf">pdf</a> / <a href="bibtex/aei.txt">bibtex</a><strong><em> (~3% oral acceptance)</em></strong>
                     <br />
-                    <em>BMVC '21 statistics: <strong>40 (3.33%) oral</strong> / 437 (36.23%) accept / 1206 submissions</em>
-                    <br />
-                    <em>tags: temporal action proposal generation, action recognition</em>
-                    <br />
-                    <a href="https://www.bmvc2021-virtualconference.com/conference/papers/paper_1095.html">conference</a> / <a href="https://github.com/vhvkhoa/tapg-agentenvinteration">github</a> / <a href="https://www.bmvc2021-virtualconference.com/assets/papers/1095.pdf">pdf</a> / <a href="bibtex/aei.txt">bibtex</a>
-                    <br />
-                    <br />
-                    The human perceives the establishment of an action in a video through the interaction between an actor and the surrounding environment.
+                    <!-- The human perceives the establishment of an action in a video through the interaction between an actor and the surrounding environment.
                     We borrow the idea in producing the proposed Actor-Environment Interaction network.
-                    <br />
+                    <br /> -->
                   </td>
                 <tr>
                   <td style="padding:10px">
@@ -499,7 +480,7 @@
                   </td>
                   <td style="padding-left:20px;padding-right:20px;width:75%;vertical-align:middle">
                     <a href="https://arxiv.org/abs/2105.11516">
-                      <papertitle>[1] Guided Hyperparameter Tuning Through Visualization and Inference</papertitle>
+                      <papertitle>[P2] Guided Hyperparameter Tuning Through Visualization and Inference</papertitle>
                     </a>
                     <br />
                     <!-- Hyekang Joo, Calvin Bao, Ishan Sen, Furong Huang, Leilani Battle -->
@@ -511,16 +492,51 @@
                     <br />
                     <em>arXiv, 2021</em>
                     <br />
-                    <span class="category_machinelearning">machine learning</span>
+                    <!-- <span class="category_machinelearning">machine learning</span>
                     <span class="category_hci">hci</span>
                     <br />
                     <em>tags: hyperparameter tuning, AutoML</em>
-                    <br />
+                    <br /> -->
                     <a href="https://arxiv.org/abs/2105.11516">pdf</a> / <a href="bibtex/vireznet.txt">bibtex</a>
+                    <!-- <br />
+                    <br />
+                    We create an AutoML tool and run evaluations on machine translation and image classification through user studies. -->
                     <br />
                     <br />
-                    We create an AutoML tool and run evaluations on machine translation and image classification through user studies.
+                    <em>Note: This is an <strong>Undergraduate Research Project</strong> that I worked on and took the co-lead of under the supervision of Profs. Battle and Huang in my <u>senior</u> year.</em>
+                    <br />
+                    <br />
                   </td>
+                  <tr class="pubtype-preprint pubtype-all">
+                  <td style="padding-left:20px;padding-right:20px;width:25%;vertical-align:middle">
+                    <div class="pic">
+                      <a href="images/preprocessing.png"><img src='images/preprocessing.png' width="160"></a>
+                    </div>
+                  </td>
+                  <td style="padding-left:20px;padding-right:20px;padding-top:20px; padding-bottom:20px;width:75%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2205.00069">
+                      <papertitle>[P1] Birds' Eye View: Measuring Behavior and Posture of Chickens as a Metric for Their Well-Being
+                      </papertitle>
+                    </a>
+                    <br />
+                    <strong>Hyekang Kevin Joo</strong>,
+                    <a href="https://dblp.org/pid/283/6366.html">Shiyuan Duan</a>,
+                    <a class="pi" href="https://poultry-science.uark.edu/people/faculty/uid/sweimer/name/Shawna+Weimer/">Shawna Weimer</a>,
+                    <a class="pi" href="http://www.cs.umd.edu/~nayeem/">Mohammad Nayeem Teli</a>
+                    <br />
+                    <em>arxiv, 2021</em>
+                    <br />
+                    <!-- <span class="category_computervision">computer vision</span>
+                    <br />
+                    <em>tags: poultry science, ethogram, object detection</em>
+                    <br /> -->
+                    <a href="https://arxiv.org/abs/2205.00069">pdf</a> / <a href="bibtex/chicken.txt">bibtex</a>
+                    <br />
+                    <br />
+                    <em>Note: This is an <strong>Undergraduate Research Project </strong> that I worked on and took the lead of under the supervision of Profs. Weimer and Teli in my <u>junior</u> year.</em>
+                    <br />
+                  </td>
+                </tr>
                 <tr>
                   <td style="padding:15px">
                     <br />
@@ -536,7 +552,7 @@
                     *PI & Co-PI are marked green on mouse-hover
                   </p>
                   <p style="display:flex; justify-content: right;font-size:small;">
-                    **My legal name on the U.S. Passport is &nbsp;<em>Kevin Hyekang Joo</em>, but I occasionally put my name as &nbsp;<em>Hyekang Kevin Joo</em>&nbsp; on papers.
+                    **As a U.S. Citizen, my &nbsp;<u>legal name</u>&nbsp; is &nbsp;<em>Kevin Hyekang Joo</em>, but I occasionally put my name as &nbsp;<em>Hyekang Kevin Joo</em>&nbsp; on papers.
                   </p>
                 </tr>
               </tbody>
