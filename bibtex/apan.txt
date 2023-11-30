@@ -1,0 +1,13 @@
+@article{bhattacharya2023tracking,
+  author    = {Sunreeta Bhattacharya and
+               Hyekang Kevin Joo and
+               Alvaro Garcia and
+               Cheng Ma and
+               Yiming Fang and
+               Fernando De la Torre and
+               Lori Holt},
+  title     = {Tracking Engagement in Real-World Human Communication from Wearable Sensors},
+  journal   = {The 21st Symposium of Advances and Perspectives in Auditory Neuroscience, 2023},
+  year      = {2023},
+  url       = {https://drive.google.com/file/d/1zQpOBCYVmgqgbvMeyAA47VV27e8bPst7/view},
+}
