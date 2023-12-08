@@ -10,26 +10,11 @@
 
       gtag('config', 'G-DMBGX018LJ');
     </script>
-    <script type="text/javascript">
-      window.onload = () => {
-        let pubtype_select = document.getElementById("pubtype-select").value;
-        let pubtype_choice = document.getElementsByClassName(pubtype_select);
-        let pubtype_all = document.getElementsByClassName("pubtype-all");
-
-        for (let each of pubtype_all) {
-            each.style.display = 'none';
-        }
-
-        for (let each of pubtype_choice) {
-            each.style.display = 'block';
-        }
-      }
-    </script>
+    <script type="text/javascript" src="main.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Kevin Hyekang Joo</title>
     <meta name="author" content="Jon Barron">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="icon" type="image/png" href="images/cocacoda.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -969,7 +954,21 @@
             <!-- Calendly badge widget begin -->
             <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
             <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-            <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/kevin-joo/30min', text: 'Schedule time with Kevin!', color: '#0069ff', textColor: '#ffffff', branding: undefined }); }</script>
+            <script type="text/javascript">
+              window.onload = function() { 
+                Calendly.initBadgeWidget(
+                  { 
+                    url: 'https://calendly.com/kevin-joo/30min', 
+                    text: 'Schedule time with Kevin!', 
+                    color: '#0069ff', 
+                    textColor: '#ffffff', 
+                    branding: undefined 
+                  }
+                ); 
+
+                selectPub();
+              }
+            </script>
             <!-- Calendly badge widget end -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
