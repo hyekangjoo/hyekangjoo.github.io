@@ -226,6 +226,22 @@
 }
 
 .waving-hand {
+  animation-name: wave-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.waving-hand2 {
+  animation-name: wave-animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.highfiving {
   animation-name: highfive;
   animation-duration: 2s;
   animation-iteration-count: infinite;
