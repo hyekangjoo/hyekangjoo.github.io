@@ -1,511 +1,30 @@
-/* Tooltip Guide: https://tutorialzine.com/2014/07/css-inline-help-tips */
+/* Main */
 
-.help-tip2{
-  position: relative;
-  bottom: 0px;
-  left: 0px;
-  text-align: center;
-  border-radius: 40%;
-  width: 24px;
-  height: 24px;
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  cursor: default;
-  padding: 0px 5px;
 }
 
-.help-tip2:before{
-  content:'Email';
-}
-
-.help-tip2:hover p{
-  display:block;
-  transform-origin: 100% 0%;
-
-  -webkit-animation: fadeIn 0.3s ease-in-out;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-.help-tip2 p{    /* The tooltip */
-  display: none;
-  text-align: left;
-  background-color: #1E2021;
-  padding: 10px;
-  width: 190px;;;;;;;;;;
-  position: absolute;
-  border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  right: -175px;;;;;;;;;;
-  color: #FFF;
-  font-size: 13px;
-  line-height: 1.4;
-}
-
-.help-tip2 p:before{ /* The pointer of the tooltip */
-  position: absolute;
-  content: '';
-  width:0;
-  height: 0;
-  border:10px solid transparent;
-  border-bottom-color:#1E2021;
-  right: 185px;;;;;;;;; 
-  top:-19px;
-}
-
-.help-tip2 p:after{ /* Prevents the tooltip from being hidden */
-  width:100%;
-  height:40px;
-  content:'';
-  position: absolute;
-  top:-40px;
-  left:0;
-}
-
-/* Tooltip Guide: https://tutorialzine.com/2014/07/css-inline-help-tips */
-
-.help-tip{
-  position: relative;
-  bottom: 0px;
-  left: 0px;
-  text-align: center;
-  background-color: #BCDBEA;
-  border-radius: 40%;
-  width: 24px;
-  height: 24px;
-  font-size: 14px;
-  line-height: 26px;
-  cursor: default;
-  padding: 0px 5px;
-}
-
-.help-tip:before{
-  content:'?';
-  font-weight: bold;
-  color:#fff;
-}
-
-.help-tip:hover p{
-  display:block;
-  transform-origin: 100% 0%;
-
-  -webkit-animation: fadeIn 0.3s ease-in-out;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-.help-tip p{    /* The tooltip */
-  display: none;
-  text-align: left;
-  background-color: #1E2021;
-  padding: 20px;
-  width: 300px;
-  position: absolute;
-  border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  right: -4px;
-  color: #FFF;
-  font-size: 13px;
-  line-height: 1.4;
-}
-
-.help-tip p:before{ /* The pointer of the tooltip */
-  position: absolute;
-  content: '';
-  width:0;
-  height: 0;
-  border:10px solid transparent;
-  border-bottom-color:#1E2021;
-  right: 2.5px;
-  top:-19px;
-}
-
-.help-tip p:after{ /* Prevents the tooltip from being hidden */
-  width:100%;
-  height:40px;
-  content:'';
-  position: absolute;
-  top:-40px;
-  left:0;
-}
-
-/* CSS animation */
-
-@-webkit-keyframes fadeIn {
-  0% { 
-      opacity:0; 
-      transform: scale(0.6);
-  }
-
-  100% {
-      opacity:100%;
-      transform: scale(1);
-  }
-}
-
-@keyframes fadeIn {
-  0% { opacity:0; }
-  100% { opacity:100%; }
-}
-
-.slider {
-  overflow: hidden;
-}
-
-.slides {
-  width: 500%;
-  display: flex;
-}
-
-.slides input {
-  display: none;
-}
-
-.slide {
-  width: 20%;
-  transition: 2s;
-}
-
-.navigation-manual {
-  position: absolute;
-  display: flex;
-  width: 250px;
-  justify-content: center;
-  margin-top: 280px;
-}
-
-.manual-btn {
-  border: 2px solid;
-  padding: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.manual-btn:not(:last-child) {
-  margin-right: 30px;
-}
-
-.manual-btn:hover {
-  background: #a7a7a7;
-}
-
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-#radio2:checked ~ .first {
-  margin-left: -20%;
-}
-#radio3:checked ~ .first {
-  margin-left: -40%;
-}
-
-.navigation-auto {
-  position: absolute;
-  display: flex;
-  width: 250px;
-  justify-content: center;
-  margin-top: 280px;
-}
-
-.navigation-auto div {
-  border: 2px solid #555555;
-  padding: 5px;
-  border-radius: 5px;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-child) {
-  margin-right: 30px;
-}
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-  background: #555555;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-  background: #555555;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-  background: #555555;
-}
-
-.waving-hand {
-  animation-name: wave-animation;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
-.waving-hand2 {
-  animation-name: wave-animation;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
-.highfiving {
-  animation-name: highfive;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
-@keyframes highfive {
-  0% { transform: scale(0.5) }
-  3% { transform: scale(0.6) }  /* The following five values can be played with to make the waving more or less extreme */
-  7% { transform: scale(0.7) }
-  10% { transform: scale(0.8) }
-  13% { transform: scale(0.9) }
-  17% { transform: scale(1) }
-  20% { transform: scale(1) }
-}
-
-@keyframes wave-animation {
-  0% { transform: rotate( 0.0deg) }
-  15% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-  30% { transform: rotate(-8.0deg) }
-  40% { transform: rotate(14.0deg) }
-  50% { transform: rotate(-4.0deg) }
-  60% { transform: rotate(10.0deg) }
-  70% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
- 100% { transform: rotate( 0.0deg) }
-}
-
-#pubtype-select{
-  font-size: 13px;
-  padding: 10px 8px 10px 14px;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  overflow: hidden;
-  position: relative;
-}
-
-#pubtype-select .select{
-  width: 120%;
-  background: no-repeat;
-  background-position:80% center;
-}
-
-#pubtype-select .select select{
-  background: transparent;
-  line-height: 1;
-  border: 0;
+html,
+body {
+  margin: 0;
   padding: 0;
-  border-radius: 0;
-  width: 120%;
-  position: relative;
-  z-index: 10;
-  font-size: 1em;
+  height: 100%;
+  overflow: hidden;
+  /* Prevent body from scrolling */
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+table {
   width: 100%;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-
-.img_container {
-  margin-right: 30px;
-  display: inline-block;
-}
-
-.pic_img {
-  width: 30px;
-  height: 30px;
-  filter: brightness(0);
-}
-
-.pic_img:hover {
-  filter: brightness(0) invert(0.5);
-}
-
-
-.text {
-  text-align:center;
-}
-
-.img_container .pic .pic_img .text {
-  display: inline-block;
-}
-
-.scrolling::-webkit-scrollbar-track {
-  /* border: 1px solid #000; */
-  padding: 2px 0;
-  border-radius: 10px;
-  background-color: #ccc;
-}
-
-.scrolling::-webkit-scrollbar {
-  width: 10px;
-}
-
-.scrolling::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  background-color: #e9ecef;
-  /* border: 1px solid #000; */
-}
-
-.category_new {
-  background-color: #ddc645;
-  color: white;
-  display: inline;
-  border-radius: 3px;
-  font-size: 11pt;
-  padding: 1.5px 5px;
-  font-weight: 500;
-  line-height: 20pt;
-}
-
-.category_years {
-  background-color: #35c335;
-  color: white;
-  display: inline;
-  border-radius: 3px;
-  font-size: 11pt;
-  padding: 1.5px 5px;
-  font-weight: 500;
-  line-height: 20pt;
-}
-
-.category_list {
-  background-color: #ccc;
-  color: white;
-  display: inline;
-  border-radius: 3px;
-  font-size: 11pt;
-  padding: 1.5px 5px;
-  font-weight: 500;
-  line-height: 20pt;
-}
-
-
-.category_oral {
-  background-color: #000;
-  color: white;
-  display: inline;
-  border-radius: 3px;
-  font-size: 11pt;
-  padding: 1.5px 5px;
-  font-weight: 500;
-  line-height: 20pt;
-}
-
-.category_computervision {
-  background-color: #bd2929;
-  color: white;
-  display: inline;
-  border-radius: 3px;
-  font-size: 11pt;
-  padding: 1.5px 5px;
-  font-weight: 500;
-  line-height: 20pt;
-}
-
-.category_multimodality {
-  background-color: #81dc36;
-  color: white;
-  display: inline;
-  border-radius: 3px;
-  font-size: 11pt;
-  padding: 1.5px 5px;
-  font-weight: 500;
-  line-height: 20pt;
-}
-
-.category_machinelearning {
-  background-color: #47b9b9;
-  color: white;
-  display: inline;
-  border-radius: 3px;
-  font-size: 11pt;
-  padding: 1.5px 5px;
-  font-weight: 500;
-  line-height: 20pt;
-}
-
-.category_hci {
-  background-color: #674ac8;
-  color: white;
-  display: inline;
-  border-radius: 3px;
-  font-size: 11pt;
-  padding: 1.5px 5px;
-  font-weight: 500;
-  line-height: 20pt;
-}
-
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin: 0 auto;
 }
 
 a {
@@ -523,58 +42,354 @@ a.pi:hover {
   color: #59d34e
 }
 
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+
+.container {
+  display: flex;
+  height: 100vh;
 }
 
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+/* <left table> */
+.left-table {
+  width: 20%;
+  /* this + .right-table.width == 100 */
+  position: fixed;
+  height: 100%;
+  background: #fff;
+  overflow: auto;
+  padding: 5%;
+  /* Padding for the center div withIN the left pane*/
 }
 
-heading {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+#profile-image img {
+  width: 75%;
+  max-width: 75%;
+  pointer-events: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#profile-text {
+  text-align: center;
+}
+
+#name {
+  font-size: 20px;
+}
+
+#title1 {
+  padding-top: 5px;
+}
+
+#email {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.uniq-font {
+  font-family: 'Andale Mono', monospace;
+}
+
+.emailpart {
+  display: inline;
+  text-align: center;
+  margin-top: 0;
+  color: rgb(118, 118, 118);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#emailpart2 {
+  color: rgb(153, 27, 30);
+}
+
+#emailpart4 {
+  color: rgb(230, 179, 0);
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  /* Stacks the tabs vertically */
+  gap: 10px;
+  margin-top: 10px;
+  /* Space between the profile and the tabs */
+}
+
+.tabs a {
+  padding: 10px 0px;
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tabs a:hover {
+  /* background: #eee; */
+  text-shadow: 0px 0 25px rgb(0, 0, 0);
+}
+
+/* </left table> */
+
+
+/* <right table> */
+.right-table {
+  flex: 1;
+  width: 80%;
+  /* + .left-table.width == 100 */
+  margin-left: 30%;
+  /* .left-table.width + alpha (margin), ie leftmost edge starting point */
+  height: 100vh + 1px;
+  overflow-y: auto;
+  padding: 5%;
+  padding-left: 0%;
+}
+
+.heading {
   font-size: 22px;
+  text-shadow: rgb(77, 77, 77) 0 0 20px;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* text-decoration: black underline; */
 }
 
-papertitle {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700
+#introduction {
+  text-align: left;
+  margin-top: 20px;
 }
 
-name {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+#intro-standout {
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
+#socialmedia-linktree {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.pic {
+  margin-bottom: 5px;
+}
+
+.pic_img {
+  width: 10px;
+  height: 30px;
+  filter: brightness(0);
+}
+
+.pic_img:hover {
+  filter: brightness(0) invert(0.5);
+}
+
+.pic .pic_img .text {
+  display: inline-block;
+}
+
+/* Tooltip Guide: https://tutorialzine.com/2014/07/css-inline-help-tips */
+.help-tip {
+  display: inline;
   position: relative;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+  border-radius: 40%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  cursor: default;
+  padding: 0px 5px;
 }
 
-.two {
-  width: 160px;
-  height: 160px;
+.help-tip:before {
+  content: 'Email';
+}
+
+.help-tip:hover p {
+  display: block;
+  transform-origin: 100% 0%;
+
+  -webkit-animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.help-tip p {
+  /* The tooltip */
+  display: none;
+  text-align: left;
+  background-color: #1E2021;
+  padding: 10px;
+  width: 190px;
   position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  right: -175px;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.help-tip p:before {
+  /* The pointer of the tooltip */
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #1E2021;
+  right: 185px;
+  top: -19px;
 }
 
-span.highlight {
-  background-color: #ffffd0;
+.help-tip p:after {
+  /* Prevents the tooltip from being hidden */
+  width: 100%;
+  height: 40px;
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 0;
+}
+
+.img_container {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.img_container img {
+  width: 30px;
+  height: 30px;
+}
+
+.hbar {
+  border: 0;
+  border-bottom-color: #ccc;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.scrolling {
+  position: relative;
+  left: -10px;
+  padding-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  overflow-y: scroll;
+  height: 150px;
+}
+
+.scrolling::-webkit-scrollbar-track {
+  /* border: 1px solid #000; */
+  padding: 2px 0;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+.scrolling::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrolling::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #e9ecef;
+  /* border: 1px solid #000; */
+}
+
+#news {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+/* </right table> */
+
+/* <Publications> */
+#publications {
+  width: 100%;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pub-figure {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 25%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.pub-description {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 75%;
+  vertical-align: middle;
+}
+
+#empty-block {
+  padding-bottom: 10%;
+}
+
+/* </publications> */
+
+
+/* <service> */
+
+.subheading {
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+  /* text-decoration: black underline; */
+}
+
+.small-empty-block {
+  padding-bottom: 3%;
+}
+
+.category_years {
+  background-color: #35c335;
+  color: white;
+  display: inline;
+  border-radius: 3px;
+  font-size: 11pt;
+  padding: 1.5px 5px;
+  font-weight: 500;
+  line-height: 20pt;
+}
+
+.subheading-container {
+  width: 100%;
+  align: center;
+  border: 0;
+  cellspacing: 0;
+  padding-left: 10px;
+}
+
+.service-img {
+  padding: 20px;
+  width: 25%;
+  vertical-align: middle;
+}
+
+.service-body {
+  width: 75%;
+  valign: center;
+}
+
+.reduce-bottom-padding {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
