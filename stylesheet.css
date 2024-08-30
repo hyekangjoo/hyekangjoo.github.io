@@ -167,6 +167,7 @@ a.pi:hover {
 
 .pic {
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .pic_img {
@@ -390,6 +391,7 @@ a.pi:hover {
   padding: 20px;
   width: 25%;
   vertical-align: middle;
+  text-align: center;
 }
 
 .service-body {
@@ -401,6 +403,7 @@ a.pi:hover {
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
+
 
 @media (max-width: 720px) and (min-width: 440px) {
   .container {
@@ -479,6 +482,8 @@ a.pi:hover {
   .pub-figure {
     padding-left: 0;
     padding-right: 0;
+    text-align: center;
+    vertical-align: middle;
   }
 
   td.pub-description {
@@ -505,9 +510,8 @@ a.pi:hover {
   .more-gamepic {
     padding: 0;
     width: 50px;
-  }
-
-  .more-gamepic {
+    vertical-align:middle;
+    text-align: center;
     padding-left: 3%;
   }
 
@@ -620,9 +624,8 @@ a.pi:hover {
   .more-gamepic {
     padding: 0;
     width: 50px;
-  }
-
-  .more-gamepic {
+    vertical-align:middle;
+    text-align: center;
     padding-left: 3%;
   }
 
