@@ -1,0 +1,13 @@
+@inproceedings{ma-joo-vail2024mm,
+      title={Multimodal Fusion with LLMs for Engagement Prediction in Natural Conversation},
+      author={Cheng Charles Ma* and Kevin Hyekang Joo* and Alexandria K. Vail* and Sunreeta Bhattacharya and Álvaro Fernández García and Kailana Baker-Matsuoka and Sheryl Mathew and Lori L. Holt and Fernando De la Torre},
+      year={2025},
+      publisher = {Association for Computing Machinery},
+      address = {New York, NY, USA},
+      booktitle = {Companion Proceedings of the 27th International Conference on Multimodal Interaction},
+      location = {Canberra, Australia},
+      keywords = {Engagement, Multimodal Machine Learning, Gaze Tracking},
+      series = {ICMI Companion '25},
+      doi = {10.1145/3747327.3764904},
+      note={Best Workshop Paper Award}
+} 
